@@ -8,7 +8,7 @@ Today I chose to read **Deep Learning Review** paper by Yann LeCun, Yoshua Bengi
 
 Link: https://www.cs.toronto.edu/~hinton/absps/NatureDeepReview.pdf 
 
-This review paper beautifully explains the limitations of conventional machine learning methods to process natural data in their raw form and how representation learning (Deep Learning methods) covers those limitations by allowing a machine to be fed with raw data and to automatically discover the representations needed for detection or classification. 
+This review paper beautifully explains the limitations of conventional machine learning methods to process natural data in their raw form and how representation learning (Deep Learning methods) covers those limitations by allowing a machine to be fed with raw data and to automatically discover the representations needed for detection, classification or any other task. 
 
 Deep-learning methods are representation-learning methods with multiple levels of representation, obtained by composing simple but non-linear modules that each transform the representation at one level (starting with the raw input) into a representation at a higher, slightly more abstract level. With the composition of enough such transformations, very complex functions can be learned.
 
