@@ -14,7 +14,7 @@ Deep-learning methods are representation-learning methods with multiple levels o
 
 **Supervised Learning**
 
-This most common form of machine learning wherein we trained the models with labeled examples. We compute an objective function that measures the error (or distance) between the output scores and the desired pattern of scores. The machine then modifies its internal adjustable parameters to reduce this error. These adjustable parameters, often called weights, are real numbers that can be seen as ‘knobs’ that define the input–output function of the machine. 
+This most common form of machine learning wherein we train the models with labeled examples. We compute an objective function that measures the error (or distance) between the output scores and the desired pattern of scores. The machine then modifies its internal adjustable parameters to reduce this error. These adjustable parameters, often called weights, are real numbers that can be seen as ‘knobs’ that define the input–output function of the machine. 
 
 **How does learning happen in Deep Learning systems?**
 
