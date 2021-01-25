@@ -78,6 +78,7 @@ There are a lot of applications of RNN such as translations, image caption gener
 Working of LSTM:
 
 https://www.youtube.com/watch?v=5dMXyiWddYs 
+
 https://www.youtube.com/watch?v=oOIqrp0h5ig 
 
 LSTM networks have subsequently proved to be more effective than conventional RNNs. 
