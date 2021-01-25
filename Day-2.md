@@ -4,7 +4,7 @@ Day 2/30
 
 Quote of the day: The beginning is the most important part of the work.
 
-Today I chose to read Deep Learning Review by Yann LeCun, Yoshua Bengio & Geoffrey Hinton
+Today I chose to read **Deep Learning Review** paper by Yann LeCun, Yoshua Bengio & Geoffrey Hinton
 
 Link: https://www.cs.toronto.edu/~hinton/absps/NatureDeepReview.pdf 
 
@@ -12,23 +12,23 @@ This review paper beautifully explains the limitations of conventional machine l
 
 Deep-learning methods are representation-learning methods with multiple levels of representation, obtained by composing simple but non-linear modules that each transform the representation at one level (starting with the raw input) into a representation at a higher, slightly more abstract level. With the composition of enough such transformations, very complex functions can be learned.
 
-Supervised Learning
+**Supervised Learning**
 
 This most common form of machine learning wherein we trained the models with labeled examples. We compute an objective function that measures the error (or distance) between the output scores and the desired pattern of scores. The machine then modifies its internal adjustable parameters to reduce this error. These adjustable parameters, often called weights, are real numbers that can be seen as ‘knobs’ that define the input–output function of the machine. 
 
-How does learning happen in Deep Learning systems?
+**How does learning happen in Deep Learning systems?**
 
 In a typical deep-learning system, there may be hundreds of millions of these adjustable weights, and hundreds of millions of labelled examples with which to train the machine. The learning algorithm computes a gradient vector that, for each weight, indicates by what amount the error would increase or decrease if the weight were increased by a tiny amount. The weight vector is then adjusted in the opposite direction to the gradient vector. The negative gradient vector indicates the direction of steepest descent in objective function, taking it closer to a minimum, where the output error is low on average.
 
-Gradient descent in simple terms: Gradient Descent is an optimization algorithm used for minimizing the cost function in various machine learning algorithms.
+**Gradient descent in simple terms**: Gradient Descent is an optimization algorithm used for minimizing the cost function in various machine learning algorithms.
 
-Now this gradient descent procedure could be of 3 types:
+*Now this gradient descent procedure could be of 3 types:*
 
-Batch Gradient Descent: we calculate the gradient on the whole dataset to perform just one update, batch gradient descent can be very slow and is intractable for datasets that don’t fit in memory. Not suitable for large datasets.
+*Batch Gradient Descent:* we calculate the gradient on the whole dataset to perform just one update, batch gradient descent can be very slow and is intractable for datasets that don’t fit in memory. Not suitable for large datasets.
 
-Stochastic Gradient Descent: This is a type of gradient descent which processes 1 training example per iteration. Hence this is quite faster than batch gradient descent. But again, when the number of training examples is large, even then it processes only one example which can be additional overhead for the system as the number of iterations will be quite large.
+*Stochastic Gradient Descent:* This is a type of gradient descent which processes 1 training example per iteration. Hence this is quite faster than batch gradient descent. But again, when the number of training examples is large, even then it processes only one example which can be additional overhead for the system as the number of iterations will be quite large.
 
-Mini-batch Gradient Descent: This one processed small batches of training examples. In this b examples where b<m are processed per iteration. So even if the number of training examples is large, it is processed in batches of b training examples in one go. Thus, it works for larger training examples and that too with lesser number of iterations.
+*Mini-batch Gradient Descent:* This one processed small batches of training examples. In this b examples where b<m are processed per iteration. So even if the number of training examples is large, it is processed in batches of b training examples in one go. Thus, it works for larger training examples and that too with lesser number of iterations.
 
 In practice, most practitioners use a procedure called stochastic gradient descent (SGD)
 
@@ -36,7 +36,7 @@ Many of the current practical applications of machine learning use linear classi
 
 This could be solved with Deep-learning. A deep-learning architecture is a multilayer stack of simple modules, all (or most) of which are subject to learning, and many of which compute non-linear input–output mappings. Each module in the stack transforms its input to increase both the selectivity and the invariance of the representation.
 
-How are these deep learning architectures trained?
+**How are these deep learning architectures trained?**
 
 The answer to this question is Backpropagation. The backpropagation procedure to compute the gradient of an objective function with respect to the weights of a multilayer stack of modules.The key insight is that the derivative (or gradient) of the objective with respect to the input of a module can be computed by working backwards from the gradient with respect to the output of that module to all the way to the external input.
 
@@ -48,7 +48,7 @@ In the late 1990s, It was widely thought that learning useful, multistage, featu
 
 There was, however, one particular type of deep, feedforward network that was much easier to train and generalized much better than networks with full connectivity between adjacent layers. These were Convolutional Neural Networks.
 
-Convolutional Neural Networks (ConvNets)
+**Convolutional Neural Networks (ConvNets)**
 
 ConvNets are designed to process data that come in the form of multiple arrays, for example a colour image composed of three 2D arrays containing pixel intensities in the three colour channels. Many data modalities are in the form of multiple arrays: 1D for signals and sequences, including language; 2D for images or audio spectrograms; and 3D for video or volumetric images. There are four key ideas behind ConvNets that take advantage of the properties of natural signals: local connections, shared weights, pooling and the use of many layers. 
 
@@ -59,13 +59,13 @@ Deep neural networks exploit the property that many natural signals are composit
 
 Recent ConvNet architectures have 10 to 20 layers of ReLUs, hundreds of millions of weights, and billions of connections between units.
 
-Distributed Representations
+**Distributed Representations**
 
 Distributed representations store information as encoded vectors and encoding spreads the information across the entire dimension of the vector, meaning every bit will have some fragment of the stored information. Neural Nets, when trained to predict the next word in a news story, for example, the learned word vectors for Tuesday and Wednesday are very similar, as are the word vectors for Sweden and Norway. Such representations are called distributed representations because their elements (the features) are not mutually exclusive and their many configurations correspond to the variations seen in the observed data. These word vectors are composed of learned features that were not determined ahead of time by experts, but automatically discovered by the neural network. 
 
 It is in opposition to the traditional N-grams approach(counting frequencies of occurrences of short symbol sequences of length up to N). N-grams treat each word as an atomic unit, so they cannot generalize across semantically related sequences of words, whereas neural language models can because they associate each word with a vector of real valued features, and semantically related words end up close to each other in that vector space.
 
-Recurrent Neural-Networks
+**Recurrent Neural-Networks**
 
 For tasks that involve sequential inputs, such as speech and language, it is often better to use RNNs. RNNs process an input sequence one element at a time, maintaining in their hidden units a ‘state vector’ that implicitly contains information about the history of all the past elements of the sequence. RNNs are very powerful dynamic systems, but training them has proved to be problematic because the back propagated gradients either grow or shrink at each time step resulting in vanishing and exploding gradients.
 
@@ -75,7 +75,7 @@ https://www.youtube.com/watch?v=UNmqTiOnRfg
 
 There are a lot of applications of RNN such as translations, image caption generation but it suffers in storing long-term dependencies. To handle that, LSTM (Long-short term memory) networks came into picture that use special hidden units, the natural behaviour of which is to remember inputs for a long time.
 
-Working of LSTM:
+**Working of LSTM:**
 
 https://www.youtube.com/watch?v=5dMXyiWddYs 
 
