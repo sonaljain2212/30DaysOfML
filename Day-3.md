@@ -49,10 +49,10 @@ While fitting random labels, there’s no need to change the learning rate sched
 
 **Early stopping**: During training, the model is evaluated on a holdout validation dataset after each epoch. If the performance of the model on the validation dataset starts to degrade (e.g. loss begins to increase or accuracy begins to decrease), then the training process is stopped. The model at the time that training is stopped is then used and is known to have good generalization performance.This procedure is called “early stopping” and is perhaps one of the oldest and most widely used forms of neural network regularization.
 
-**Observations**: It confirms that early stopping could potentially improve the generalization performance.
+*Observations*: It confirms that early stopping could potentially improve the generalization performance.
 
 **Batch Normalization** : Batch normalization (also known as batch norm) is a method used to make artificial neural networks faster and more stable through normalization of the input layer by re-centering and re-scaling.
-Observations: Batch normalization is usually found to improve the generalization performance
+*Observations*: Batch normalization is usually found to improve the generalization performance
 
 In summary, observations on both explicit and implicit regularizers are consistently suggesting that regularizers, when properly tuned, could help to improve the generalization performance. However, it is unlikely that the regularizers are the fundamental reason for generalization, as the networks continue to perform well after all the regularizers are removed. 
 
