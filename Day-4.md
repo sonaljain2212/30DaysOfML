@@ -66,7 +66,7 @@ In Deep Learning, we see tensors everywhere. Well, Google’s framework is calle
 In Numpy, you may have an array that has three dimensions, right? That is, technically speaking, a tensor.
 A scalar (a single number) has zero dimensions, a vector has one dimension, a matrix has two dimensions and a tensor has three or more dimensions. That’s it!
 
-*Loading Data, Devices and CUDA*
+**1. Loading Data, Devices and CUDA**
 
 ”How do we go from Numpy’s arrays to PyTorch’s tensors”, you ask? That’s what from_numpy is good for. It returns a CPU tensor, though.
 
@@ -78,7 +78,7 @@ you can use cuda.is_available() to find out if you have a GPU at your disposal a
 
 We can also go the other way around, turning tensors back into Numpy arrays, using numpy(). But first Use Tensor.cpu() to copy the tensor to host memory first.
 
-**Creating Parameters**
+**2. Creating Parameters**
 
 What distinguishes a tensor used for data — like the ones we’ve just created — from a tensor used as a (trainable) parameter/weight?
 The latter tensors require the computation of its gradients, so we can update their values (the parameters’ values, that is). That’s what the requires_grad=True argument is good for. It tells PyTorch we want it to compute gradients for us.
@@ -89,7 +89,7 @@ Although the last approach worked fine, it is much better to assign tensors to a
 
 Note - In PyTorch, every method that ends with an underscore (_) makes changes in-place, meaning, they will modify the underlying variable.
 
-**Autograd**
+**3. Autograd**
 
 Now that we know how to create tensors that require gradients, let’s see how PyTorch handles them
 
@@ -103,7 +103,7 @@ If you check the method’s documentation, it clearly states that gradients are 
 
 torch.no_grad()  allows us to perform regular Python operations on tensors, independent of PyTorch’s computation graph.
 
-**Optimizer**
+**4. Optimizer**
 
 An optimizer takes the parameters we want to update, the learning rate we want to use (and possibly many other hyper-parameters as well!) and performs the updates through its step() method.
 
@@ -111,13 +111,13 @@ Besides, we also don’t need to zero the gradients one by one anymore. We just 
 
 *Refer the code for implementation*
 
-**Loss**
+**5. Loss**
 
 We now tackle the loss computation. As expected, PyTorch got us covered once again. There are many loss functions to choose from, depending on the task at hand. Since ours is a regression, we are using the Mean Square Error (MSE) loss.
 
 Notice that nn.MSELoss actually creates a loss function for us — it is NOT the loss function itself. Moreover, you can specify a reduction method to be applied, that is, how do you want to aggregate the results for individual points — you can average them (reduction=’mean’) or simply sum them up (reduction=’sum’).
 
-**Model**
+**6. Model**
 
 In PyTorch, a model is represented by a regular Python class that inherits from the Module class.
 
@@ -141,7 +141,7 @@ So, how about writing a function that takes those three elements and returns ano
 
 Then we can use this general-purpose function to build a train_step() function to be called inside our training loop.
 
-**Dataset**
+**7. Dataset**
 
 In PyTorch, a dataset is represented by a regular Python class that inherits from the Dataset class. You can think of it as a kind of a Python list of tuples, each tuple corresponding to one point (features, label).
 
@@ -157,7 +157,7 @@ __len__(self): it should simply return the size of the whole dataset so, wheneve
 
 *Refer the code for implementation*
 
-**DataLoader**
+**8. DataLoader**
 
 Until now, we have used the whole training data at every training step. It has been batch gradient descent all along. This is fine for our ridiculously small dataset, sure, but if we want to go serious about all this, we must use mini-batch gradient descent. Thus, we need mini-batches. Thus, we need to slice our dataset accordingly.
 
@@ -167,7 +167,7 @@ Our loader will behave like an iterator, so we can loop over it and fetch a diff
 
 *Refer the code for implementation*
 
-**Evaluation**
+**9. Evaluation**
 
 This is the last part of our journey — we need to change the training loop to include the evaluation of our model, that is, computing the validation loss. The first step is to include another inner loop to handle the mini-batches that come from the validation loader , sending them to the same device as our model. Next, we make predictions using our model (line 23) and compute the corresponding loss (line 24).
 
