@@ -8,7 +8,7 @@ As students, we all develop ML models and make predictions from it. The question
 
 Link: https://towardsdatascience.com/scaling-machine-learning-from-0-to-millions-of-users-part-1-a2d36a5e849 
 
-This article gives really great suggestions of do’s and don’ts to create a scalable ML model.
+This article gives really great suggestions of do’s and don’ts for creating a scalable ML model.
 
 It assumes we start the journey at the stage where you’ve trained a model on your local machine (or a local dev server), using a popular open source library like scikit-learn, TensorFlow or Apache MXNet. Maybe you’ve even implemented your own algorithm. You’ve measured the model’s accuracy using your test set, and things look good. Now you’d like to deploy the model to production in order to check its actual behaviour, run A/B tests, etc. Where to start?
 
