@@ -43,15 +43,15 @@ Start training,
 Once training is complete, grab the trained model and save it in Amazon S3.
 Shut the training cluster down.
 
-The main concern for using EC2 here is unless you automate all of this (with (AWS CloudFormation), (Terraform), CLI scripts, etc.), you will waste a ton of money. So if you have a cluster provisioning script that each developer can run to get their own training cluster. It can be a good enough reason to stick to EC2 for training.
+The main concern for using EC2 here is unless you automate all of this (with AWS CloudFormation, Terraform, CLI scripts, etc.), you will waste a ton of money. So if you have a cluster provisioning script that each developer can run to get their own training cluster. It can be a good enough reason to stick to EC2 for training.
 
  ### 2. Amazon EMR
 
-(Amazon EMR) in a ML discussion? Well, yes (TensorFlow) and (Apache MXNet) are part of the EMR distribution, and of course, (Spark MLlib) is also included. EMR supports (compute-optimized instances) (c5 and p3), so it looks like we have everything we need.
+Amazon EMR in a ML discussion? Well, yes TensorFlow and Apache MXNet are part of the EMR distribution, and of course, Spark MLlib is also included. EMR supports compute-optimized instances (c5 and p3), so it looks like we have everything we need.
 
 Here are a few good reasons to run training jobs on EMR:
 
-- You already use EMR for other tasks, with solid automation (on-demand clusters, (steps), etc.) and cost optimization (spot instances).
+- You already use EMR for other tasks, with solid automation (on-demand clusters,steps, etc.) and cost optimization (spot instances).
 - Your data requires a lot of ETL, and Hive / Spark would work great for that. Why not run everything in one place?
 - Spark MLlib has the algos you need.
 - You read somewhere that there a (SageMaker SDK for Spark), so that could be another option for the future.
@@ -65,7 +65,7 @@ That’s a hard call, and you may end up picking an instance type that’s subop
 
  ### 3. Container services
 
-This would also pay dividends when deploying to Docker clusters, whether on (Amazon ECS) or (Amazon EKS). You can run any workload in a Docker container, and you can move it around without any restriction, from your laptop to your production environment. When running on AWS, costs can be squeezed with auto scaling, reserved instances, spot instances, etc. From a training perspective, containers give you full flexibility to use any open source library, or even your own custom code. All popular ML/DL libraries provide base images, which you can either run directly or customize, and these will save you a lot of time.
+This would also pay dividends when deploying to Docker clusters, whether on Amazon ECS or Amazon EKS. You can run any workload in a Docker container, and you can move it around without any restriction, from your laptop to your production environment. When running on AWS, costs can be squeezed with auto scaling, reserved instances, spot instances, etc. From a training perspective, containers give you full flexibility to use any open source library, or even your own custom code. All popular ML/DL libraries provide base images, which you can either run directly or customize, and these will save you a lot of time.
 
 Thanks to auto scaling now supporting (mixed instances types), different instance types can coexist within the same cluster. Thus, you can easily add compute-optimized instances to any cluster and schedule your ML/DL training there. Of course, you can also create a dedicated cluster for training if you think that makes more sense. Last but not least, GPU instances are supported on both services, with GPU-optimized AMIs to boot.
 
