@@ -6,6 +6,8 @@ Day - 6/30
 
 Already 20% through...yayy!!! Let’s continue yesterday's article on “**Scaling Machine Learning from 0 to millions of users**” — part 2. 
 
+Link: (https://medium.com/faun/scaling-machine-learning-from-0-to-millions-of-users-part-2-80b0d1d7fc61)
+
 In real life scenarios there could be situations like traffic soon starting to increase, data piles up, more models need to be trained, technical and business stakes are getting higher, and let’s face it, the current architecture will go underwater soon. Thus this article focuses on scaling training to a large number of machines.
 
 ## Will scaling up fix it?
