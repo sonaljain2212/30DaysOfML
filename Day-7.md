@@ -6,6 +6,7 @@ Day - 7/30
 
 Today I chose to watch a really nice video on **"Architectural Elements Of Neural Networks"**. This video really dives deep into the architecture of **Convolutional Neural Networks** and explains the components and the mathematics behind the working of Convolutional Neural Network for a Classification task.
 
+Link: (https://www.youtube.com/watch?v=f9GT9sYP9gk&feature=youtu.be)
 ### What is a Neural Network?
 In simple terms neural network is an attempt to simulate the network of neurons that make up a human brain so that the computer will be able to learn things and make decisions in a humanlike manner.
 
