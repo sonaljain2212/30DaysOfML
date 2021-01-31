@@ -6,7 +6,7 @@ Day - 7/30
 
 Today I chose to watch a really nice video on **"Architectural Elements Of Neural Networks"**. This video really dives deep into the architecture of **Convolutional Neural Networks** and explains the components and the mathematics behind the working of Convolutional Neural Network for a Classification task.
 
-### So what is a Neural Network?
+### What is a Neural Network?
 In simple terms neural network is an attempt to simulate the network of neurons that make up a human brain so that the computer will be able to learn things and make decisions in a humanlike manner.
 
 In technical terms, a neural network is a function that maps an image to a probability distribution over a known set of classes/categories. The prediction for a given image is a given class with the highest probability.
@@ -15,7 +15,7 @@ In technical terms, a neural network is a function that maps an image to a proba
 
 CNN is a type of neural network model which allows us to extract higher representations for the image content. Unlike the classical image recognition where you define the image features yourself, CNN takes the image’s raw pixel data, trains the model, then extracts the features automatically for better classification.
 
-### Why Convolutional??
+### Convolutional??
 
 In mathematics (in particular, functional analysis), convolution is a mathematical operation on two functions (f and g) that produces a third function that expresses how the shape of one is modified by the other. The term convolution refers to both the result function and to the process of computing it. It is defined as the integral of the product of the two functions after one is reversed and shifted. And the integral is evaluated for all values of shift, producing the convolution function.
 Some features of convolution are similar to cross-correlation: for real-valued functions, of a continuous or discrete variable, it differs from cross-correlation only in that either f(x) or g(x) is reflected about the y-axis; thus it is a cross-correlation of f(x) and g(−x), or f(−x) and g(x). For complex-valued functions, the cross-correlation operator is the adjoint of the convolution operator.
