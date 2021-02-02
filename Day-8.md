@@ -6,6 +6,8 @@ Day - 8/30
 
 Today I chose to read a paper “**Visualizing and Understanding Convolutional Networks**”  in the lines of Day 7 video explaining the Convolution Neural Networks.
 
+Link: (https://arxiv.org/pdf/1311.2901.pdf) 
+
 Large Convolutional Network models have demonstrated impressive classification performance on the ImageNet benchmark. So this paper explains why they perform so well, or how they might be improved. The paper introduces a novel visualization technique that gives insight into the function of intermediate feature layers and the operation of the classier.
 
 The authors performed a study to understand the contribution of model layers and from the results they got to know the ImageNet models generalizes very well for different datasets jand outperforms the current state-of-the-art results on Caltech-101 and Caltech-256 datasets.
