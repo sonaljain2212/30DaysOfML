@@ -13,6 +13,8 @@ A convolution is how the input is modified by a filter. In convolutional network
 
 The article very well shows the operation for 2D convolution. Convolution in 3D is just like 2D, except you are doing the 2d work 3 times, because there are 3 color channels.
 
+**Important terms to understand:**
+
 - Padding: If you want to keep the output image at the same width and height without decreasing the filter size, you can add padding to the original image with zero’s and make a convolution slice through the image.
 
 - feature map :An output channel of the convolutions is called a feature map. It encodes the presence or absence, and degree of presence of the feature it detects.
