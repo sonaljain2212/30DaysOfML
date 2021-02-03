@@ -15,7 +15,7 @@ The article very well shows the operation for 2D convolution. Convolution in 3D 
 
 - Padding: If you want to keep the output image at the same width and height without decreasing the filter size, you can add padding to the original image with zero’s and make a convolution slice through the image.
 
-feature map:An output channel of the convolutions is called a feature map. It encodes the presence or absence, and degree of presence of the feature it detects.
+- feature map :An output channel of the convolutions is called a feature map. It encodes the presence or absence, and degree of presence of the feature it detects.
 
 - Translation-Invariant
 Another interesting fact is CNNs are somewhat resistant to translation such as an image shifting a bit, which would have a similar activation map as the one before shifting. It’s because the convolution is a feature detector and if it’s detecting a dark edge and the image is moved to the bottom, then dark edges will not be detected until the convolution is moved down.
