@@ -30,11 +30,9 @@ Recall, we could write posterior as a product of likelihood and prior using Baye
 
 In the formula, p(y|x) is posterior probability; p(x|y) is likelihood; p(y) is prior probability and p(x) is evidence.
 
-![alt text](https://miro.medium.com/max/430/1*nnB9V9HPHsMdofRyh_UbPw.png)
-
 In order to get MAP, we can replace the likelihood in the MLE with the posterior:
 
-![alt text](https://miro.medium.com/max/430/1*Vp-Wy_o3FIvg_rBnRRGSzg.png)
+![alt text](https://miro.medium.com/max/430/1*nnB9V9HPHsMdofRyh_UbPw.png)
 
 Comparing the equation of MAP with MLE, we can see that the only difference is that MAP includes prior in the formula, which means that the likelihood is weighted by the prior in MAP.
 In the special case when prior follows a uniform distribution, this means that we assign equal weights to all possible value of the Θ. In this case, MAP can be written as:
