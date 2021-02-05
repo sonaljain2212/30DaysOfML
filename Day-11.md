@@ -15,6 +15,8 @@ Maximum Likelihood Estimation:
 
 The goal of MLE is to infer Θ in the likelihood function p(X|Θ).
 
+![alt text](https://miro.medium.com/max/294/1*Yn-toKQ53M7jdMMxGBYSbA.gif)
+
 Because of duality, maximize a log likelihood function equals to minimize a negative log likelihood. In Machine Learning, minimizing negative log likelihood is preferred. For example, it is used as a loss function, cross entropy, in the Logistic Regression.
 
 The coin example in the article shows that When the sample size is small, the conclusion of MLE is not reliable.
