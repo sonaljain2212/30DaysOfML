@@ -2,7 +2,7 @@
 
 Day - 11/30
 
-Quote of the Day: 
+Quote of the Day: Success of the maximum utilization of ability that you have!!
 
 While Studying ML concepts, you would very often see two terminologies coming which you should definitely know and understand well. They are Maximum Likelihood estimation and Maximum A Posterior, thus I decided to read an article on “Maximum Likelihood Estimation VS Maximum A Posterior”.
 
