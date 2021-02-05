@@ -38,3 +38,5 @@ Comparing the equation of MAP with MLE, we can see that the only difference is t
 In the special case when prior follows a uniform distribution, this means that we assign equal weights to all possible value of the Θ. In this case, MAP can be written as:
 
 ![alt text](https://miro.medium.com/max/430/1*Vp-Wy_o3FIvg_rBnRRGSzg.png)
+
+Based on the formula above, we can conclude that MLE is a special case of MAP, when prior follows a uniform distribution. This is the connection between MAP and MLE.
