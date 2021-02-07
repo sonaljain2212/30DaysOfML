@@ -102,24 +102,18 @@ Here are various examples. Here we will also apply thegroup() method on the obje
 ### - 6. Wildcard matching (with multiple characters)
 Now, we can move on to more complex wildcard matching with multiple characters, which allows us much more power and flexibility.
 
-  - Matching 0 or more repetitions:
-* matches 0 or more repetitions of the preceding regular expression.
+  - Matching 0 or more repetitions: * matches 0 or more repetitions of the preceding regular expression.
 
-  - Matching 1 or more repetitions: 
-+ causes the resulting RE to match 1 or more repetitions of the preceding RE.
+  - Matching 1 or more repetitions: + causes the resulting RE to match 1 or more repetitions of the preceding RE.
 
 
-  - Matching precisely 0 or 1 repetition: 
-? causes the resulting RE to match precisely 0 or 1 repetitions of the preceding RE.
+  - Matching precisely 0 or 1 repetition: ? causes the resulting RE to match precisely 0 or 1 repetitions of the preceding RE.
 
-  - Controlling how many repetitions to match:
-{m} specifies exactly m copies of RE to match. Fewer matches cause a non-match and returns None.
+  - Controlling how many repetitions to match: {m} specifies exactly m copies of RE to match. Fewer matches cause a non-match and returns None.
 
-  - Sets of matching characters:
-[x,y,z] matches x, y, or z.
+  - Sets of matching characters: [x,y,z] matches x, y, or z.
 
-  - Range of characters inside a set:
-A range of characters can be matched inside the set. This is one of the most widely used regex techniques. We denote range by using a -. For example, a-z or A-Z will match anything between a and z or A and Z i.e. the entire English alphabet.
+  - Range of characters inside a set: A range of characters can be matched inside the set. This is one of the most widely used regex techniques. We denote range by using a -. For example, a-z or A-Z will match anything between a and z or A and Z i.e. the entire English alphabet.
 Let’s suppose, we want to extract an email id. We put in a pattern matching regex with alphabetical characters + @ + .com. But it cannot catch an email id with some numerical digits in it.
 
 ### - 7. The Split method
