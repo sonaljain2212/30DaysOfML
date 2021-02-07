@@ -2,7 +2,7 @@
 
 Day 13/30
 
-Quote of the day:
+Quote of the day: re.compile("Hey!! you are doing great!! Keep it up." )
 
 Ever thought of doing a cool project trying your hands on text mining but stuck at where to start? How to get the important information from the gazillion strings of data? I would suggest starting with regex here. Read this very simple yet very comprehensive article “A simple intro to Regex with Python”. 
 
