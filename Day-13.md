@@ -26,19 +26,51 @@ You can look at the examples in the article and the official documentation for a
 
 We use thematch method to check if a pattern matches a string/sequence. It is case-sensitive.
 
+```
+p = re.compile('(ab)*')
+print(p.match('ababababab').span())
+```
+
 - 2. A `compile`d program
 
 Instead of repeating the code, we can use compile to create a regex program and use built-in methods.
 
+```
+ p = re.compile('ab*')
+```
 - 3. Positional matching
 
 We can easily use additional parameters in the match object to check for positional matching of a string pattern.
 
+```
+p = re.compile('(ab)*')
+print(p.match('ababababab' , pos =1 ).span())
+```
+
 - 4. The `findall` and `finditer` methods
 
 The search is powerful but it is also limited to finding the first occurring match in the text. To discover all the matches in a long text, we can use findall and finditer methods.
+
 The findall method returns a list with the matching pattern. You can count the number of items to understand the frequency of the searched term in the text.
 The finditer method produces an iterator. We can use this to see more information, as shown below.
+
+```
+p = re.compile(r'\d+')
+>>> p.findall('12 drummers drumming, 11 pipers piping, 10 lords a-leaping')
+['12', '11', '10']
+```
+
+```
+>>> iterator = p.finditer('12 drummers drumming, 11 ... 10 ...')
+>>> iterator  
+<callable_iterator object at 0x...>
+>>> for match in iterator:
+...     print(match.span())
+...
+(0, 2)
+(22, 24)
+(29, 31)
+```
 
 - 5. Wildcard matching (with single characters)
 
