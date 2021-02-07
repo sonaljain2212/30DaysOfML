@@ -38,7 +38,7 @@ The search is powerful but it is also limited to finding the first occurring mat
 The findall method returns a list with the matching pattern. You can count the number of items to understand the frequency of the searched term in the text.
 The finditer method produces an iterator. We can use this to see more information, as shown below.
 
-- 5 Wildcard matching (with single characters)
+- 5. Wildcard matching (with single characters)
 
 Now, we gently enter the arena where Regex shines through. The most common use of Regex is related to ‘wildcard matching’ or ‘fuzzy matching’. This is where you don’t have the full pattern but a portion of it and you still want to find where in a given text, something similar appears.
 Here are various examples. Here we will also apply thegroup() method on the object returned by search to essentially return the matched string.
@@ -65,7 +65,7 @@ End of a string
 The $ (dollar sign) matches a pattern at the end of the string. Following is a practical example where we are only interested in pulling out the patent information of Apple and discard other companies. We check the end of the text for ‘Apple’ and only if it matches, we pull out the patent number using the numerical digit matching code we showed earlier.
 
 
--6 Wildcard matching (with multiple characters)
+- 6. Wildcard matching (with multiple characters)
 Now, we can move on to more complex wildcard matching with multiple characters, which allows us much more power and flexibility.
 Matching 0 or more repetitions
 * matches 0 or more repetitions of the preceding regular expression.
@@ -88,5 +88,5 @@ Range of characters inside a set
 A range of characters can be matched inside the set. This is one of the most widely used regex techniques. We denote range by using a -. For example, a-z or A-Z will match anything between a and z or A and Z i.e. the entire English alphabet.
 Let’s suppose, we want to extract an email id. We put in a pattern matching regex with alphabetical characters + @ + .com. But it cannot catch an email id with some numerical digits in it.
 
-- 7 The Split method
+- 7. The Split method
 Finally, we talk about a method that can be used in creative ways to extract meaningful text from an irregular corpus. A simple example is shown below, where we build a Regex pattern with the extrinsic characters which are messing up a regular sentence and use the split() method to get rid of those characters from the sentence.
