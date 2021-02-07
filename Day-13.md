@@ -22,7 +22,7 @@ You can look at the examples in the article and the official documentation for a
 
 ## Methods
 
-- 1. The ‘match’ method:
+### - 1. The ‘match’ method:
 
 We use thematch method to check if a pattern matches a string/sequence. It is case-sensitive.
 
@@ -31,14 +31,14 @@ p = re.compile('(ab)*')
 print(p.match('ababababab').span())
 ```
 
-- 2. A `compile`d program
+### - 2. A `compile`d program
 
 Instead of repeating the code, we can use compile to create a regex program and use built-in methods.
 
 ```
  p = re.compile('ab*')
 ```
-- 3. Positional matching
+### - 3. Positional matching
 
 We can easily use additional parameters in the match object to check for positional matching of a string pattern.
 
@@ -47,7 +47,7 @@ p = re.compile('(ab)*')
 print(p.match('ababababab' , pos =1 ).span())
 ```
 
-- 4. The `findall` and `finditer` methods
+### - 4. The `findall` and `finditer` methods
 
 The search is powerful but it is also limited to finding the first occurring match in the text. To discover all the matches in a long text, we can use findall and finditer methods.
 
@@ -72,7 +72,7 @@ p = re.compile(r'\d+')
 (29, 31)
 ```
 
-- 5. Wildcard matching (with single characters)
+### - 5. Wildcard matching (with single characters)
 
 Now, we gently enter the arena where Regex shines through. The most common use of Regex is related to ‘wildcard matching’ or ‘fuzzy matching’. This is where you don’t have the full pattern but a portion of it and you still want to find where in a given text, something similar appears.
 Here are various examples. Here we will also apply thegroup() method on the object returned by search to essentially return the matched string.
@@ -99,7 +99,7 @@ Here are various examples. Here we will also apply thegroup() method on the obje
     The $ (dollar sign) matches a pattern at the end of the string. Following is a practical example where we are only interested in pulling out the patent information of Apple and discard other companies. We check the end of the text for ‘Apple’ and only if it matches, we pull out the patent number using the numerical digit matching code we showed earlier.
 
 
-- 6. Wildcard matching (with multiple characters)
+### - 6. Wildcard matching (with multiple characters)
 Now, we can move on to more complex wildcard matching with multiple characters, which allows us much more power and flexibility.
 Matching 0 or more repetitions
 * matches 0 or more repetitions of the preceding regular expression.
@@ -122,5 +122,5 @@ Range of characters inside a set
 A range of characters can be matched inside the set. This is one of the most widely used regex techniques. We denote range by using a -. For example, a-z or A-Z will match anything between a and z or A and Z i.e. the entire English alphabet.
 Let’s suppose, we want to extract an email id. We put in a pattern matching regex with alphabetical characters + @ + .com. But it cannot catch an email id with some numerical digits in it.
 
-- 7. The Split method
+### - 7. The Split method
 Finally, we talk about a method that can be used in creative ways to extract meaningful text from an irregular corpus. A simple example is shown below, where we build a Regex pattern with the extrinsic characters which are messing up a regular sentence and use the split() method to get rid of those characters from the sentence.
