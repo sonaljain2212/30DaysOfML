@@ -18,6 +18,8 @@ import re
 
 The official documentation page (https://docs.python.org/3/howto/regex.html)
 
+You can look at the examples in the article and the official documentation for a good understanding.
+
 ## Methods
 
 - 1. The ‘match’ method:
@@ -42,27 +44,27 @@ The finditer method produces an iterator. We can use this to see more informatio
 
 Now, we gently enter the arena where Regex shines through. The most common use of Regex is related to ‘wildcard matching’ or ‘fuzzy matching’. This is where you don’t have the full pattern but a portion of it and you still want to find where in a given text, something similar appears.
 Here are various examples. Here we will also apply thegroup() method on the object returned by search to essentially return the matched string.
-Single-character matching by DOT
 
-Dot . matches any single character except the newline character.
+ - Single-character matching by DOT
 
-Lowercase \w to match any single letter, digit or underscore
-DOT is limited to alphabetical characters, so we need to expand the repertoire with other tools.
-Dot . matches any single character except the newline character.
+    Dot(.) matches any single character except the newline character.
 
-(\W or uppercase W) matches anything not covered with \w
-There are symbols other than letter, digits, and underscore. We use \W to catch them.
+ - Lowercase \w to match any single letter, digit or underscore
+    DOT is limited to alphabetical characters, so we need to expand the repertoire with other tools. Dot(.) matches any single character except the newline character.
 
-Matching patterns with whitespace characters
-\s (lowercase s) matches a single whitespace character like space, newline, tab, return. Naturally, this is used to search for a pattern with whitespace inside it e.g. a pair of words.
+ - (\W or uppercase W) matches anything not covered with \w
+    There are symbols other than letter, digits, and underscore. We use \W to catch them.
 
-
-Start of a string
-The ^(caret) matches pattern at the beginning of a string (but not anywhere else).
+ - Matching patterns with whitespace characters
+    \s (lowercase s) matches a single whitespace character like space, newline, tab, return. Naturally, this is used to search for a pattern with whitespace inside it e.g. a pair of words.
 
 
-End of a string
-The $ (dollar sign) matches a pattern at the end of the string. Following is a practical example where we are only interested in pulling out the patent information of Apple and discard other companies. We check the end of the text for ‘Apple’ and only if it matches, we pull out the patent number using the numerical digit matching code we showed earlier.
+ - Start of a string
+    The ^(caret) matches pattern at the beginning of a string (but not anywhere else).
+
+
+ - End of a string
+    The $ (dollar sign) matches a pattern at the end of the string. Following is a practical example where we are only interested in pulling out the patent information of Apple and discard other companies. We check the end of the text for ‘Apple’ and only if it matches, we pull out the patent number using the numerical digit matching code we showed earlier.
 
 
 - 6. Wildcard matching (with multiple characters)
