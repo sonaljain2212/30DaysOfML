@@ -77,48 +77,48 @@ p = re.compile(r'\d+')
 Now, we gently enter the arena where Regex shines through. The most common use of Regex is related to ‘wildcard matching’ or ‘fuzzy matching’. This is where you don’t have the full pattern but a portion of it and you still want to find where in a given text, something similar appears.
 Here are various examples. Here we will also apply thegroup() method on the object returned by search to essentially return the matched string.
 
- - Single-character matching by DOT
+  - Single-character matching by DOT: 
 
     Dot(.) matches any single character except the newline character.
 
- - Lowercase \w to match any single letter, digit or underscore
+  - Lowercase \w to match any single letter, digit or underscore: 
     DOT is limited to alphabetical characters, so we need to expand the repertoire with other tools. Dot(.) matches any single character except the newline character.
 
- - (\W or uppercase W) matches anything not covered with \w
+  - (\W or uppercase W) matches anything not covered with \w:
     There are symbols other than letter, digits, and underscore. We use \W to catch them.
 
- - Matching patterns with whitespace characters
+  - Matching patterns with whitespace characters:
     \s (lowercase s) matches a single whitespace character like space, newline, tab, return. Naturally, this is used to search for a pattern with whitespace inside it e.g. a pair of words.
 
 
- - Start of a string
+  - Start of a string:
     The ^(caret) matches pattern at the beginning of a string (but not anywhere else).
 
 
- - End of a string
+  - End of a string:
     The $ (dollar sign) matches a pattern at the end of the string. Following is a practical example where we are only interested in pulling out the patent information of Apple and discard other companies. We check the end of the text for ‘Apple’ and only if it matches, we pull out the patent number using the numerical digit matching code we showed earlier.
 
 
 ### - 6. Wildcard matching (with multiple characters)
 Now, we can move on to more complex wildcard matching with multiple characters, which allows us much more power and flexibility.
-Matching 0 or more repetitions
+
+  - Matching 0 or more repetitions:
 * matches 0 or more repetitions of the preceding regular expression.
 
-Matching 1 or more repetitions
+  - Matching 1 or more repetitions: 
 + causes the resulting RE to match 1 or more repetitions of the preceding RE.
 
 
-Matching precisely 0 or 1 repetition
+  - Matching precisely 0 or 1 repetition: 
 ? causes the resulting RE to match precisely 0 or 1 repetitions of the preceding RE.
 
-Controlling how many repetitions to match
+  - Controlling how many repetitions to match:
 {m} specifies exactly m copies of RE to match. Fewer matches cause a non-match and returns None.
 
-
-Sets of matching characters
+  - Sets of matching characters:
 [x,y,z] matches x, y, or z.
 
-Range of characters inside a set
+  - Range of characters inside a set:
 A range of characters can be matched inside the set. This is one of the most widely used regex techniques. We denote range by using a -. For example, a-z or A-Z will match anything between a and z or A and Z i.e. the entire English alphabet.
 Let’s suppose, we want to extract an email id. We put in a pattern matching regex with alphabetical characters + @ + .com. But it cannot catch an email id with some numerical digits in it.
 
