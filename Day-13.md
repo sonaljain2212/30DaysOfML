@@ -4,7 +4,7 @@ Day 13/30
 
 Quote of the day: re.compile("Hey!! you are doing great!! Keep it up." )
 
-Ever thought of doing a cool project trying your hands on text mining but stuck at where to start? How to get the important information from the gazillion strings of data? I would suggest starting with regex here. Read this very simple yet very comprehensive article “A simple intro to Regex with Python”. 
+Ever thought of trying your hands on text mining and doing a cool project but stuck at where to start? How to get the important information from the gazillion of strings of data? I would suggest starting with regex!! Read this very simple yet very comprehensive article “A simple intro to Regex with Python”. 
 
 Link: (https://towardsdatascience.com/a-simple-intro-to-regex-with-python-14d23a34d170) 
 
