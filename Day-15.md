@@ -2,7 +2,7 @@
 
 Day 15/30
 
-**Quote of the Day**:
+**Quote of the Day**: Keep your eyes on the stars and feets on the ground!!
 
 So yesterday I read a paper on Batch Normalization and How batch normalization combats “Internal Covariate shift” while training Deep Neural Nets. Interestingly today the paper I read, titled “**How Does Batch Normalization Help Optimization?**” demonstrates that such distributional stability of layer inputs has little to do with the success of BatchNorm. 
 
