@@ -4,7 +4,7 @@ Day 16/30
 
 **Quote of the day**: It's okay to take a break and start again with a full blow!!
 
-The quote above because I took a break yesterday and I believe it is needed sometimes. So I am now in the 2nd half of my 30 day journey and I can't tell you how good it feels!! So today I chose to learn somthing interesting about how the parameters are calulated in a Convolution Neuural Network. I came across this article "Understanding and Calculating the number of Parameters in Convolution Neural Networks (CNNs)" for learning the calculations.
+Used the above quote because I took a break yesterday and I believe it is needed sometimes. So I am now in the 2nd half of my 30 day journey and I can't tell you how good it feels!! So today I chose to learn somthing interesting about how the parameters are calulated in a Convolution Neuural Network. I came across this article "Understanding and Calculating the number of Parameters in Convolution Neural Networks (CNNs)" for learning the calculations.
 
 Link: (https://towardsdatascience.com/understanding-and-calculating-the-number-of-parameters-in-convolution-neural-networks-cnns-fc88790d530d)
 
