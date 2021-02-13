@@ -1,8 +1,8 @@
-#30daysoftechreading
+# #30daysoftechreading
 
 Day 17/30
 
-Quote of the day: You never fail, until you stop trying!!
+**Quote of the day:** You never fail, until you stop trying!!
 
 I came across a question today, Is a 1 * 1 convolution operation the same as scaling the input by a single scalar constant? While searching the answer for this I came accross the article "A Gentle Introduction to 1×1 Convolutions to Manage Model Complexity". 
 
@@ -16,7 +16,7 @@ A problem with deep convolutional neural networks is that the number of feature 
 
 To address this problem, a 1×1 convolutional layer can be used that offers a channel-wise pooling, often called feature map pooling or a projection layer. This simple technique can be used for dimensionality reduction, decreasing the number of feature maps whilst retaining their salient features. It can also be used directly to create a one-to-one projection of the feature maps to pool features across channels or to increase the number of feature maps, such as after traditional pooling layers.
 
-Benefits of 1*1 Convolution:
+**Benefits of 1*1 Convolution:**
 
 1. The 1×1 filter can be used to create a linear projection of a stack of feature maps.
 2. The projection created by a 1×1 can act like channel-wise pooling and be used for dimensionality reduction.
