@@ -2,9 +2,9 @@
 
 Day 17/30
 
-Quote of the day: 
+Quote of the day: You never fail, until you stop trying!!
 
-I came across a question today, Is a 1  1 convolution operation the same as scaling the input by a single scalar constant? While searching the answer for this I came accross the article "A Gentle Introduction to 1×1 Convolutions to Manage Model Complexity". 
+I came across a question today, Is a 1 * 1 convolution operation the same as scaling the input by a single scalar constant? While searching the answer for this I came accross the article "A Gentle Introduction to 1×1 Convolutions to Manage Model Complexity". 
 
 Link: (https://machinelearningmastery.com/introduction-to-1x1-convolutions-to-reduce-the-complexity-of-convolutional-neural-networks/)
 
