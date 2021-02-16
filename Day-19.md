@@ -2,7 +2,7 @@
 
 Day 19/30
 
-Quote of the day:
+Quote of the day: Positive anything is better than negative nothing.
 
 Happy Monday!!
 
