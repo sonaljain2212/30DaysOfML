@@ -44,6 +44,8 @@ proportional to the square of the velocity, becomes very weak when the velocity 
 small. It is not powerful enough to force the particle to come to rest. A particle
 with a nonzero initial velocity that experiences only the force of turbulent drag.
  
+AdaGrad:
+
 The AdaGrad Algorithm individually adapts the learning
 rates of all model parameters by scaling them inversely proportional to the square
 root of the sum of all the historical squared values of the gradient (Duchi et al.,
