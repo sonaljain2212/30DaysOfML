@@ -58,10 +58,9 @@ training can result in a premature and excessive decrease in the eﬀective lear
 rate. AdaGrad performs well for some but not all deep learning models.
 
  
-RMSProp
-The
-RMSProp
-Algorithm modiﬁes AdaGrad to perform better in
+RMSProp:
+
+The RMSProp Algorithm modiﬁes AdaGrad to perform better in
 the nonconvex setting by changing the gradient accumulation into an exponentially
 weighted moving average. AdaGrad is designed to converge rapidly when applied to
 a convex function. When applied to a nonconvex function to train a neural network,
