@@ -6,7 +6,7 @@ Quote of the day: Positive anything is better than negative nothing.
 
 Happy Monday!!
 
-I have been reading a lot about neural networks and thus it was necessary for me to get familiar with so many important optimization techniques that are there in NN. So I chose to read "An overview of gradient descent optimization algorithms" article.
+I have been reading a lot about neural networks and thus it was necessary for me to get familiar with so many important optimization techniques that are there for neural networks. I chose to read a post "An overview of gradient descent optimization algorithms" today.
 
 link: (https://ruder.io/optimizing-gradient-descent/index.html#adam)
 
