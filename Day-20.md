@@ -39,7 +39,19 @@ Example : you have a coin and you don’t know whether that is fair or tricky so
 
 Hypothesis testing types:
 
-T Test ( Student T test)
-Z Test
-ANOVA Test
-Chi-Square Test
+1. T Test ( Student T test)
+2. Z Test
+3. ANOVA Test
+4. Chi-Square Test
+
+T- Test :- A t-test is a type of inferential statistic which is used to determine if there is a significant difference between the means of two groups which may be related in certain features. It is mostly used when the data sets, like the set of data recorded as outcome from flipping a coin a 100 times, would follow a normal distribution and may have unknown variances. T test is used as a hypothesis testing tool, which allows testing of an assumption applicable to a population.
+T-test has 2 types : 1. one sampled t-test 2. two-sampled t-test.
+
+One sample t-test : The One Sample t Test determines whether the sample mean is statistically different from a known or hypothesised population mean. The One Sample t Test is a parametric test.
+
+Two sampled T-test :-The Independent Samples t Test or 2-sample t-test compares the means of two independent groups in order to determine whether there is statistical evidence that the associated population means are significantly different. The Independent Samples t Test is a parametric test. This test is also known as: Independent t Test.
+Example : is there any association between week1 and week2 ( code is given below in python)
+
+Paired sampled t-test :- The paired sample t-test is also called dependent sample t-test. It’s an uni variate test that tests for a significant difference between 2 related variables. An example of this is if you where to collect the blood pressure for an individual before and after some treatment, condition, or time point.
+H0 :- means difference between two sample is 0
+H1:- mean difference between two sample is not 0
