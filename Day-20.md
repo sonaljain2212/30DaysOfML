@@ -34,4 +34,12 @@ This is normally denoted with alpha(maths symbol ) and generally it is 0.05 or 5
 - P-value :- The P value, or calculated probability, is the probability of finding the observed, or more extreme, results when the null hypothesis (H 0) of a study question is true — the definition of ‘extreme’ depends on how the hypothesis is being tested.
 
 If your P value is less than the chosen significance level then you reject the null hypothesis i.e. accept that your sample gives reasonable evidence to support the alternative hypothesis. It does NOT imply a “meaningful” or “important” difference; that is for you to decide when considering the real-world relevance of your result.
-Example : you have a coin and you don’t know whether that is fair or tricky so let’s decide null and alternate hypothesis
+Example : you have a coin and you don’t know whether that is fair or tricky so let’s decide null and alternate hypothesis.
+
+
+Hypothesis testing types:
+
+T Test ( Student T test)
+Z Test
+ANOVA Test
+Chi-Square Test
