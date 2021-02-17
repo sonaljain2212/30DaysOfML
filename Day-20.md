@@ -2,7 +2,7 @@
 
 Day 20/20
 
-Quote of the day:
+Quote of the day: You can't prove nay hypothesis, you can only improve or disprove it!! ~Christopher Monckton
 
 Today I thought of brushing up my statistics basics so chose to read about Hypothesis testing. I referred "Hypothesis testing in Machine learning using Python" article for this. Well probably all who are beginner in machine learning or in intermediate level or statistic student heard about this buzz word hypothesis testing.
 
