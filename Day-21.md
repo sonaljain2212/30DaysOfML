@@ -2,7 +2,7 @@
 
 Day 21/30
 
-Quote of the Day:
+Quote of the Day: Cleaning and organizing is a practice, not a project.
 
 They say "Garbage in, garbage out". What I meant by this is if you give unclean data to a model, it will predict irrelavant results!!
 Whenever you start working on a new dataset or project, What is the first step you do? I assume Data Cleaning!! Today I thought of checking out the data cleaning techniques and for that I read "The Ultimate Guide to Data Cleaning" article.
