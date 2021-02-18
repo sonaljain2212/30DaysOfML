@@ -14,10 +14,10 @@ The Workflow:
 
 The workflow is a sequence of three steps aiming at producing high-quality data and taking into account all the criteria we’ve talked about.
 
-Inspection: Detect unexpected, incorrect, and inconsistent data.
-Cleaning: Fix or remove the anomalies discovered.
-Verifying: After cleaning, the results are inspected to verify correctness.
-Reporting: A report about the changes made and the quality of the currently stored data is recorded.
+- Inspection: Detect unexpected, incorrect, and inconsistent data.
+- Cleaning: Fix or remove the anomalies discovered.
+- Verifying: After cleaning, the results are inspected to verify correctness.
+- Reporting: A report about the changes made and the quality of the currently stored data is recorded.
 
 
 
