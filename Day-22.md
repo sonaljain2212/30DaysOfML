@@ -2,7 +2,7 @@
 
 Day 22/30
 
-Quote of the Day: 
+Quote of the Day: Every Dimension is special!! ~Jeferry Lagarias
 
 Today I thought of reading "A beginner’s guide to dimensionality reduction in Machine Learning" in continuation to yesterdays ultimate guide to Data Cleaning. Dimentionality reduction is one of the most crucial topics in Data Science. It aids in modeling our data when the data suffers the curse of dimentionality.
 
