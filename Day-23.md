@@ -4,7 +4,7 @@ Day 23/30
 
 **Quote of the day**: “Knowing Is Not Enough; We Must Apply. Wishing Is Not Enough; We Must Do.” – Johann Wolfgang Von Goethe
 
-I was scrolling through my LinkedIn today and I came across a term Graph Neural Network(GNN). I immediately googled about this interesting term which I never heard of before. To explore more about it chose to read "A Gentle Introduction to Graph Neural Networks (Basics, DeepWalk, and GraphSage)".
+I was scrolling through my LinkedIn today and I came across a term Graph Neural Network(GNN). I immediately googled about this interesting term which I never heard of before. To explore more I chose to read "A Gentle Introduction to Graph Neural Networks (Basics, DeepWalk, and GraphSage)".
 
 Graph Neural Network (GNN) has recently gained increasing popularity in various domains, including social network, knowledge graph, recommender system, and even life science. The power of GNN in modeling the dependencies between nodes in a graph enables the breakthrough in the research area related to graph analysis. This article aims to introduce the basics of Graph Neural Network and two more advanced algorithms, DeepWalk and GraphSage.
 
