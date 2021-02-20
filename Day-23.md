@@ -19,16 +19,21 @@ Graph Neural Network is a type of Neural Network which directly operates on the 
 
 In the node classification problem setup, each node v is characterized by its feature x_v and associated with a ground-truth label t_v. Given a partially labeled graph G, the goal is to leverage these labeled nodes to predict the labels of the unlabeled. It learns to represent each node with a d dimensional vector (state) h_v which contains the information of its neighborhood.
 
+![alt text](https://miro.medium.com/max/750/1*p6t0CmhJgR4R_DakoagdzQ.png)
+
 
 where x_co[v] denotes the features of the edges connecting with v, h_ne[v] denotes the embedding of the neighboring nodes of v, and x_ne[v] denotes the features of the neighboring nodes of v. The function f is the transition function that projects these inputs onto a d-dimensional space. Since we are seeking a unique solution for h_v, we can apply Banach fixed point theorem and rewrite the above equation as an iteratively update process. Such operation is often referred to as message passing or neighborhood aggregation.
 
+![alt text](https://miro.medium.com/max/435/1*8hFb-3_AEkY7QRj0DOzgxg.png)
 
 H and X denote the concatenation of all the h and x, respectively.
 The output of the GNN is computed by passing the state h_v as well as the feature x_v to an output function g.
 
 
+![alt text](https://miro.medium.com/max/360/1*4Yp_AB30dh5prZ2jYLyv3g.png)
+
 Both f and g here can be interpreted as feed-forward fully-connected Neural Networks. The L1 loss can be straightforwardly formulated as the following:
 
-```math
-$$SE = \frac{\sigma}{\sqrt{n}}$$
-```
+
+![alt text](https://miro.medium.com/max/468/1*eDxF6Mblk_O9a_f4us7r6w.png)
+
