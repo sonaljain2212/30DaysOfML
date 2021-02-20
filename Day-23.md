@@ -37,3 +37,7 @@ Both f and g here can be interpreted as feed-forward fully-connected Neural Netw
 
 ![alt text](https://miro.medium.com/max/468/1*eDxF6Mblk_O9a_f4us7r6w.png)
 
+However, there are three main limitations with this original proposal of GNN pointed out by this paper:
+1. If the assumption of “fixed point” is relaxed, it is possible to leverage Multi-layer Perceptron to learn a more stable representation, and removing the iterative update process. This is because, in the original proposal, different iterations use the same parameters of the transition function f, while the different parameters in different layers of MLP allow for hierarchical feature extraction.
+2. It cannot process edge information (e.g. different edges in a knowledge graph may indicate different relationship between nodes)
+3. Fixed point can discourage the diversification of node distribution, and thus may not be suitable for learning to represent nodes.
