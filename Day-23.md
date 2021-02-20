@@ -30,5 +30,5 @@ The output of the GNN is computed by passing the state h_v as well as the featur
 Both f and g here can be interpreted as feed-forward fully-connected Neural Networks. The L1 loss can be straightforwardly formulated as the following:
 
 ```math
-SE = \frac{\sigma}{\sqrt{n}}
+$$SE = \frac{\sigma}{\sqrt{n}}$$
 ```
