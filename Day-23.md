@@ -41,3 +41,20 @@ However, there are three main limitations with this original proposal of GNN poi
 1. If the assumption of “fixed point” is relaxed, it is possible to leverage Multi-layer Perceptron to learn a more stable representation, and removing the iterative update process. This is because, in the original proposal, different iterations use the same parameters of the transition function f, while the different parameters in different layers of MLP allow for hierarchical feature extraction.
 2. It cannot process edge information (e.g. different edges in a knowledge graph may indicate different relationship between nodes)
 3. Fixed point can discourage the diversification of node distribution, and thus may not be suitable for learning to represent nodes.
+
+
+DeepWalk
+DeepWalk is the first algorithm proposing node embedding learned in an unsupervised manner. It highly resembles word embedding in terms of the training process. The motivation is that the distribution of both nodes in a graph and words in a corpus follow a power law.
+
+
+Refer to the article for details about DeepWalk.
+
+The main issue with DeepWalk is that it lacks the ability of generalization. Whenever a new node comes in, it has to re-train the model in order to represent this node (transductive). Thus, such GNN is not suitable for dynamic graphs where the nodes in the graphs are ever-changing.
+
+
+GraphSage
+GraphSage provides a solution to address the aforementioned problem, learning the embedding for each node in an inductive way. Specifically, each node is represented by the aggregation of its neighborhood. Thus, even if a new node unseen during training time appears in the graph, it can still be properly represented by its neighboring nodes. 
+
+Refer to the article for details about GraphSage.
+
+GraphSage enables representable embedding to be generated for unseen nodes by aggregating its nearby nodes. It allows node embedding to be applied to domains involving dynamic graph, where the structure of the graph is ever-changing. Pinterest, for example, has adopted an extended version of GraphSage, PinSage, as the core of their content discovery system.
