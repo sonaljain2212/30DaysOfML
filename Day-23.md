@@ -2,19 +2,20 @@
 
 Day 23/30
 
-Quote of the day:
+**Quote of the day**: “Knowing Is Not Enough; We Must Apply. Wishing Is Not Enough; We Must Do.” – Johann Wolfgang Von Goethe
 
 I was scrolling through my LinkedIn today and I came across a term Graph Neural Network(GNN). I immediately googled about this interesting term which I never heard of before. To explore more about it chose to read "A Gentle Introduction to Graph Neural Networks (Basics, DeepWalk, and GraphSage)".
 
 Graph Neural Network (GNN) has recently gained increasing popularity in various domains, including social network, knowledge graph, recommender system, and even life science. The power of GNN in modeling the dependencies between nodes in a graph enables the breakthrough in the research area related to graph analysis. This article aims to introduce the basics of Graph Neural Network and two more advanced algorithms, DeepWalk and GraphSage.
 
-What is a Graph?
+### What is a Graph?
 
 A graph is a data structure consisting of two components, vertices and edges. A graph G can be well described by the set of vertices V and edges E it contains. Edges can be either directed or undirected, depending on whether there exist directional dependencies between vertices.
 
 G= (V,E)
 
-Graph Neural Network
+### Graph Neural Network:
+
 Graph Neural Network is a type of Neural Network which directly operates on the Graph structure. A typical application of GNN is node classification. Essentially, every node in the graph is associated with a label, and we want to predict the label of the nodes without ground-truth. The first proposal of GNN and thus often regarded as the original GNN.
 
 In the node classification problem setup, each node v is characterized by its feature x_v and associated with a ground-truth label t_v. Given a partially labeled graph G, the goal is to leverage these labeled nodes to predict the labels of the unlabeled. It learns to represent each node with a d dimensional vector (state) h_v which contains the information of its neighborhood.
@@ -43,7 +44,8 @@ However, there are three main limitations with this original proposal of GNN poi
 3. Fixed point can discourage the diversification of node distribution, and thus may not be suitable for learning to represent nodes.
 
 
-DeepWalk
+### DeepWalk:
+
 DeepWalk is the first algorithm proposing node embedding learned in an unsupervised manner. It highly resembles word embedding in terms of the training process. The motivation is that the distribution of both nodes in a graph and words in a corpus follow a power law.
 
 
@@ -52,7 +54,8 @@ Refer to the article for details about DeepWalk.
 The main issue with DeepWalk is that it lacks the ability of generalization. Whenever a new node comes in, it has to re-train the model in order to represent this node (transductive). Thus, such GNN is not suitable for dynamic graphs where the nodes in the graphs are ever-changing.
 
 
-GraphSage
+### GraphSage:
+
 GraphSage provides a solution to address the aforementioned problem, learning the embedding for each node in an inductive way. Specifically, each node is represented by the aggregation of its neighborhood. Thus, even if a new node unseen during training time appears in the graph, it can still be properly represented by its neighboring nodes. 
 
 Refer to the article for details about GraphSage.
