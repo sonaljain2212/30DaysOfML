@@ -2,7 +2,7 @@
 
 Day 26/30
 
-Quote of the Day:
+Quote of the Day: Don't wait for it to happen, make it happen!!
 
 Just 5 more days to go!! Couldn't believe I was able to keep my consistency with a few breaks. Today I chose to read a paper on ResNets titled as "Deep Residual Learning for Image Recognition". This paper presents a residual learning framework to ease the training of networks that are substantially deeper than those used previously. The depth of representations is of central importance for many visual recognition tasks. Using ensemble of these residual nets authors were able to achieves 3.57% error on the ImageNet test set.
 
