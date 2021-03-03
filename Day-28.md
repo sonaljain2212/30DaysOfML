@@ -4,7 +4,7 @@ Day 28/30
 
 Quote of the day: Disconnect to reconnect!!
 
-After a much needed break where I had to focus on other priority tasks, I took up a paper titled "Language Models are Few-Shot Learners" to see how increasing the number of parameters to 175 B would help in the training process withour updating the weights. This paper takes about GPT-3, an autoregressive language model with 175 billion
+After a much needed break where I had to focus on other priority tasks, I took up a paper titled "Language Models are Few-Shot Learners" to see how increasing the number of parameters to 175 B would help in the training process without updating the weights. This paper talks about GPT-3, an autoregressive language model with 175 billion
 parameters, 10x more than any previous non-sparse language model, and test its performance in the few-shot setting. For all tasks, GPT-3 is applied without any gradient updates or fine-tuning, with tasks and few-shot demonstrations specified purely via text interaction with the model.
 
 GPT-3 achieves strong performance on many NLP datasets, including translation, question-answering, and cloze tasks, as well as several tasks that require on-the-fly reasoning or domain adaptation, such as unscrambling words, using a novel word in a sentence, or performing 3-digit arithmetic. At the same time, we also identify some datasets where GPT-3’s few-shot learning still struggles, as well as some datasets where GPT-3 faces methodological issues related to training on large web corpora. Finally, we find that GPT-3 can generate samples of news articles which human evaluators have difficulty distinguishing from articles written by humans.
